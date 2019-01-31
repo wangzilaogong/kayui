@@ -1,11 +1,11 @@
-import Test from './tests/index'
+import Test from './components/tests'
 
-const packages = {
+const components = {
   Test
 }
 
 const kui = {
-  ...packages
+  ...components
 }
 const install = function (Vue, opts = {}) {
   if (install.installed) return
