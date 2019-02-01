@@ -2,8 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
-import kUi from '../packages/index'
+import kUi from '../src/index'
 
 Vue.use(kUi)
 

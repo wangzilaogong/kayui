@@ -1,4 +1,4 @@
-import Test from './components/tests'
+import Test from '../packages/tests'
 
 const components = {
   Test
