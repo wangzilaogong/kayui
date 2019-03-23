@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>{{name}}</h3>
+        <h3 class="color-red">{{name}}</h3>
         <div class="num">{{ count }}</div>
         <button @click="increment">自增</button>
     </div>
