@@ -1,7 +1,11 @@
 import Test from '../packages/tests'
+import Button from '../packages/button'
+import { Layout } from '../packages/layout'
 
 const components = {
-  Test
+  Test,
+  Button,
+  Layout
 }
 
 const kui = {

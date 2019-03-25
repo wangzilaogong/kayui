@@ -88,7 +88,7 @@ function addStyleResource (rule) {
     .loader('style-resources-loader')
     .options({
       patterns: [
-        path.resolve(__dirname, './src/styles/common/colors.less')
+        path.resolve(__dirname, './src/styles/custom.less')
       ]
     })
 }
