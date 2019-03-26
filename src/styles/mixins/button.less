@@ -1,0 +1,30 @@
+.btn-size(@padding ,@font-size,@border-radius){
+  padding: @padding;
+  font-size:@font-size;
+  border-radius:@border-radius;
+}
+
+.btn(){
+  display: inline-block;
+  height:@btn-height-base;
+  line-height: @btn-height-base;
+  background-color: @btn-bg-default;
+  color:#fff;
+  white-space: nowrap; // 不换行
+  touch-action: manipulation; // touch 的手势操作
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  .btn-size(@btn-padding-base, @font-size14, @btn-border-radius-small);
+  cursor: pointer;
+  &:active,
+  &:focus{
+    outline: 0;
+  }
+}
+
+// primar
+.btn-primary(){
+  background-color: @btn-bg-primary;
+  color: #333;
+}

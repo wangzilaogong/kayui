@@ -1,31 +1,25 @@
 <template>
-<div></div>
+<button :class="classes"><slot></slot></button>
 </template>
 <script>
+const prefixCls = 'kui-btn'
 export default {
   name: 'KButton',
-  data () {
-    return {
-      s: 'a'
-
+  props: {
+    type: {
+      type: String,
+      default: ''
     }
   },
-  created () {
-    const { to } = this
-    console.log(!!to)
+  data () {
+    return { }
   },
   computed: {
-    tagName () {
-      console.log(this)
-      return this
-    },
-    a () {
-      const { to } = this
-      if (to) {
-        return { type: 'button' }
-      } else {
-        return { type: 'a' }
-      }
+    classes () {
+      return [
+        `${prefixCls}`,
+        this.type ? `${prefixCls}-${this.type}` : ''
+      ]
     }
   },
   methods: {

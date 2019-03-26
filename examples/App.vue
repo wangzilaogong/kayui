@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <Layout>
+      <Button>ssss</Button>
+      <!-- <Layout>
         <p class="kui-layout kui-layout-has-sider">sssss</p>
-      </Layout>
+      </Layout> -->
     </div>
     <!-- <router-view/> -->
   </div>
