@@ -1,9 +1,11 @@
 import Test from '../packages/tests'
 import Button from '../packages/button'
+import Icon from '../packages/icon'
 import { Layout } from '../packages/layout'
 
 const components = {
   Test,
+  Icon,
   Button,
   Layout
 }
