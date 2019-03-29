@@ -6,7 +6,7 @@
         <p class="kui-layout kui-layout-has-sider">sssss</p>
       </Layout> -->
       <p></p>
-      <Icon type="hand-lizard-o" class="fa-spin" color="red" size="50"></Icon>
+      <Icon type="hand-lizard-o"  color="red" size="50" spin/>
     </div>
     <!-- <router-view/> -->
   </div>
