@@ -44,6 +44,7 @@ module.exports = {
           ['/parts/layoutContainer','布局容器'],
           ['/parts/color','色彩'],
           ['/parts/icon','图标'],
+          ['/parts/button','按钮'],
         ]
         }
     ]

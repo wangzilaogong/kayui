@@ -1,12 +1,19 @@
 <template>
   <div id="app">
     <div id="nav">
-      <Button>ssss</Button>
+      <Button>原始按钮</Button>
+      <p></p>
+      <Button type="primary">默认按钮</Button>
+      <p></p>
+      <Button type="normal">百搭按钮</Button>
+      <p></p>
+      <Button type="warm">暖色按钮</Button>
+      <p></p>
+      <Button type="danger">警告按钮</Button>
       <!-- <Layout>
         <p class="kui-layout kui-layout-has-sider">sssss</p>
       </Layout> -->
-      <p></p>
-      <Icon type="hand-lizard-o"  color="red" size="50" spin/>
+      <!-- <Icon type="hand-lizard-o"  color="red" size="50" spin/> -->
     </div>
     <!-- <router-view/> -->
   </div>

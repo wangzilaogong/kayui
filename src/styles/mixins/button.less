@@ -23,8 +23,22 @@
   }
 }
 
+.btn-color(@color ,@background,@border){
+  color: @color;
+  background-color:@background;
+  border:@border;
+}
+
+.btn-default(){  //白色的那个按钮
+  background-color: @btn-bg-default;
+  color: #555;
+  border:@btn-border-default;
+  .btn-color(@color, @btn-bg-default, @btn-border-default)
+}
+
 // primar
 .btn-primary(){
   background-color: @btn-bg-primary;
-  color: #333;
+  color: #fff;
 }
+
