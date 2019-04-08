@@ -18,7 +18,8 @@ export default {
     classes () {
       return [
         `${prefixCls}`,
-        this.type ? `${prefixCls}-${this.type}` : ''
+        this.type ? `${prefixCls}-${this.type}` : '',
+        this.$attrs.disabled === '' ? `${prefixCls}-disabled` : ''
       ]
     }
   },

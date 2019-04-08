@@ -10,6 +10,8 @@
       <Button type="warm">暖色按钮</Button>
       <p></p>
       <Button type="danger">警告按钮</Button>
+      <p></p>
+      <Button  disabled>禁用按钮</Button>
       <!-- <Layout>
         <p class="kui-layout kui-layout-has-sider">sssss</p>
       </Layout> -->
