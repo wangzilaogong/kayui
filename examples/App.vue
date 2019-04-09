@@ -17,6 +17,10 @@
       <Blockquote type="warm">dsdsdsdsds</Blockquote>
       <Blockquote type="danger">dsdsdsdsds</Blockquote>
       <Blockquote type="normal">dsdsdsdsds</Blockquote>
+      <Hr type="primary"></Hr>
+      <Hr type="warm"></Hr>
+      <Hr type="danger"></Hr>
+      <Hr type="normal"></Hr>
       <!-- <Layout>
         <p class="kui-layout kui-layout-has-sider">sssss</p>
       </Layout> -->

@@ -2,6 +2,7 @@ import Test from '../packages/tests'
 import Button from '../packages/button'
 import Icon from '../packages/icon'
 import Blockquote from '../packages/blockquote'
+import Hr from '../packages/hr'
 import { Layout } from '../packages/layout'
 
 const components = {
@@ -9,7 +10,8 @@ const components = {
   Icon,
   Button,
   Layout,
-  Blockquote
+  Blockquote,
+  Hr
 }
 
 const kui = {
