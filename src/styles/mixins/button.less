@@ -65,5 +65,37 @@
 }
 
 .btn-disabled(){
-  color: purple;
+  &:active,
+  &:hover{
+    opacity: 1;
+  }
+  cursor: not-allowed;
+  .btn-color(@color-C9, @btn-bg-disabled, @btn-border-disabled)
+}
+
+
+// lg sm xs 
+.btn-lg(){
+  height: 44px;
+  line-height: 44px;
+  padding: 0 25px;
+  font-size: @font-size16;
+}
+
+.btn-sm(){
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: @font-size12;
+}
+
+.btn-xs(){
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+  font-size: @font-size12;
+}
+
+.btn-radius(){
+  border-radius: @btn-border-radius;
 }

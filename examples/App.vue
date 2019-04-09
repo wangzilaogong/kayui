@@ -3,13 +3,13 @@
     <div id="nav">
       <Button>原始按钮</Button>
       <p></p>
-      <Button type="primary">默认按钮</Button>
+      <Button type="primary" size="lg" radius long>默认按钮</Button>
       <p></p>
-      <Button type="normal">百搭按钮</Button>
+      <Button type="normal" size="lg" radius>百搭按钮</Button>
       <p></p>
-      <Button type="warm">暖色按钮</Button>
+      <Button type="warm" size="sm" radius>暖色按钮</Button>
       <p></p>
-      <Button type="danger">警告按钮</Button>
+      <Button type="danger" size="xs" radius>警告按钮</Button>
       <p></p>
       <Button  disabled>禁用按钮</Button>
       <!-- <Layout>
