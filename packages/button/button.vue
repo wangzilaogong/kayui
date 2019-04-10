@@ -1,5 +1,5 @@
 <template>
-<button :class="classes"><slot></slot></button>
+<button :class="classes" @click="handleClick"><slot></slot></button>
 </template>
 <script>
 const prefixCls = 'kui-btn'
@@ -43,6 +43,9 @@ export default {
     }
   },
   methods: {
+    handleClick (event) {
+      this.$emit('on-click', event)
+    }
   }
 }
 </script>

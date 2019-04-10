@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-view></router-view>
     <div id="nav">
       <Button>原始按钮</Button>
       <p></p>
