@@ -1,13 +1,13 @@
 <template>
-  <blockquote :class="classes">
-    <slot></slot>
-  </blockquote>
+  <fieldset>
+
+  </fieldset>
 </template>
 
 <script>
-const prefixCls = 'kui-quote'
+const prefixCls = 'kui-fieldset'
 export default {
-  name: 'BlockQuote',
+  name: 'Fieldset',
   props: {
     type: {
       type: String,

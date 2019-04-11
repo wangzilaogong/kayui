@@ -2,13 +2,17 @@
 <button :class="classes" @click="handleClick"><slot></slot></button>
 </template>
 <script>
+import { oneOf } from '../../src/utils/assist.js'
 const prefixCls = 'kui-btn'
 export default {
   name: 'KButton',
   props: {
     type: {
       type: String,
-      default: ''
+      validator: function (value) {
+        return oneOf(value, ['primary', 'default', 'normal', 'warm', 'danger'])
+      },
+      default: 'default'
     },
     disabled: {
       type: Boolean,
