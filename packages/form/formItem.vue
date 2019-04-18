@@ -14,11 +14,31 @@ export default {
       type: String
     }
   },
+  inject: ['form'],
   mounted () {
     if (this.prop) {
       this.dispatch('KForm', 'on-form-item-add', this)
+      this.setRules()
     }
   },
+  methods: {
+    setRules () {
+      this.$on('on-form-blur', this.onFieldBlur)
+      this.$on('on-form-change', this.onFieldChange)
+    },
+    getRules () {
+      let formRules = this.form.rules
+      formRules = formRules ? formRules[this.prop] : []
+      return [].concat(formRules || [])
+    },
+    onFieldBlur () {
+
+    },
+    onFieldChange () {
+
+    }
+  },
+
   beforeDestroy () {
     this.dispatch('KForm', 'on-form-item-remove', this)
   }

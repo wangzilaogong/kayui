@@ -22,6 +22,53 @@ Vuepress
 # CSS约束
 采用BEM  
 
+# 工程目录结构
+```
+├── examples
+│   ├── App.vue
+│   ├── assets
+│   ├── components
+│   ├── docs
+│   ├── main.js
+│   ├── router.js
+│   ├── store.js
+│   └── views
+├── packages
+│   ├── alert
+│   ├── blockquote
+│   ├── button
+│   ├── fieldset
+│   ├── form
+│   ├── grid
+│   ├── input
+│   ├── layout
+│   ├── row
+│   └── tests
+├── public
+├── src
+│   ├── directives
+│   ├── mixins
+│   ├── styles
+│   │   ├── README.MD
+│   │   ├── animation
+│   │   ├── common
+│   │   ├── components
+│   │   ├── custom.less
+│   │   ├── index.less
+│   │   ├── mixins
+│   │   └── themes
+│   ├── utils
+│   └── index.js
+├── tests
+│   ├── e2e
+│   └── unit
+├── vue.config.js
+├── postcss.config.js
+├── package-lock.json
+├── package.json
+├── babel.config.js
+└── README.md
+```
 
 ## 目标
 基础组件

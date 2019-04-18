@@ -17,6 +17,11 @@ export default {
     rules: {
       type: Object
     },
+    provide () {
+      return {
+        form: this
+      }
+    },
     data () {
       return {
         fields: []
