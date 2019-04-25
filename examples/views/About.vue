@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>This is an about page222</h1>
       <Button type="primary" size="lg" @on-click="aa"  radius long>默认按钮2</Button>
   </div>
 </template>
