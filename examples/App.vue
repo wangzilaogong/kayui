@@ -4,7 +4,7 @@
     <div id="nav">
       <Button>原始按钮</Button>
       <p></p>
-      <Button type="primary" size="lg" radius long>默认按钮</Button>
+      <Button type="primary" size="lg" radius long >默认按钮</Button>
       <p></p>
       <Button type="normal" size="lg" radius>百搭按钮</Button>
       <p></p>

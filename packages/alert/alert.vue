@@ -1,6 +1,8 @@
 <template>
   <div>
-    'ssss Alert'
+    <div v-for="(item,index) in notices " :key="index">
+      {{item.content}}
+    </div>
   </div>
 </template>
 
@@ -23,7 +25,6 @@ export default {
       const name = getUuid()
       let _notice = { name: name, ...notice }
       this.notices.push(_notice)
-
       const duration = notice.duration
       setTimeout(() => {
         this.remove(name)

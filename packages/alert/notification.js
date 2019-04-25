@@ -1,4 +1,4 @@
-import Alert from './alert'
+import Alert from './alert.vue' // need to be .vue 因为他优先选js 了 或者webpack 里配置下
 import Vue from 'vue'
 
 Alert.newInstance = properties => {
@@ -14,9 +14,8 @@ Alert.newInstance = properties => {
 
   const component = Instance.$mount()
   document.body.appendChild(component.$el)
-
   const alert = Instance.$children[0]
-
+  console.log(alert, 'ss')
   return {
     add (n) {
       alert.add(n)

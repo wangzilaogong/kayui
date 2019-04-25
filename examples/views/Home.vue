@@ -2,7 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-      <Button type="primary" size="lg" @click="aa" radius long>默认按钮2</Button>
+      <Button type="primary" size="lg" @click.native="aa" radius long>默认按钮2</Button>
   </div>
 </template>
 
@@ -17,7 +17,10 @@ export default {
   },
   methods: {
     aa () {
-      console.log('object')
+      this.$Alert.info({
+        content: 'ss',
+        duration: 3
+      })
     }
   }
 }
