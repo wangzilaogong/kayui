@@ -1,0 +1,101 @@
+.btn-size(@padding ,@font-size,@border-radius){
+  padding: @padding;
+  font-size:@font-size;
+  border-radius:@border-radius;
+}
+
+.btn-color(@color ,@background,@border){
+  color: @color;
+  background-color:@background;
+  border:@border;
+}
+
+.btn-variant(@color , @background , @border){
+
+
+}
+
+.btn(){
+  display: inline-block;
+  height:@btn-height-base;
+  line-height: @btn-height-base;
+  background-color: @btn-bg-default;
+  white-space: nowrap; // 不换行
+  touch-action: manipulation; // touch 的手势操作
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  .btn-size(@btn-padding-base, @font-size14, @btn-border-radius-small);
+  cursor: pointer;
+  &:active,
+  &:focus{
+    outline: 0;
+  }
+  &:hover{
+    opacity: .8;
+    // color:#fff;
+  }
+}
+
+
+
+.btn-default(){  //白色的那个按钮
+  .btn-color(#555, @btn-bg-default, @btn-border-default)
+}
+
+// primary
+.btn-primary(){
+  .btn-color(#fff, @btn-bg-primary, @btn-border-primary)
+}
+// normal
+.btn-normal(){
+  .btn-color(#fff, @btn-bg-normal, @btn-border-normal)
+}
+// warm
+.btn-warm(){
+  .btn-color(#fff, @btn-bg-warm, @btn-border-warm)
+}
+// danger
+.btn-danger(){
+  .btn-color(#fff, @btn-bg-danger, @btn-border-danger)
+}
+// normal
+.btn-normal(){
+  .btn-color(#fff, @btn-bg-normal, @btn-border-normal)
+}
+
+.btn-disabled(){
+  &:active,
+  &:hover{
+    opacity: 1;
+  }
+  cursor: not-allowed;
+  .btn-color(@color-C9, @btn-bg-disabled, @btn-border-disabled)
+}
+
+
+// lg sm xs 
+.btn-lg(){
+  height: 44px;
+  line-height: 44px;
+  padding: 0 25px;
+  font-size: @font-size16;
+}
+
+.btn-sm(){
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: @font-size12;
+}
+
+.btn-xs(){
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+  font-size: @font-size12;
+}
+
+.btn-radius(){
+  border-radius: @btn-border-radius;
+}

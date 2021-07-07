@@ -1,0 +1,23 @@
+@quote-prefix-cls:~"@{css-prefix}-quote";
+
+.@{quote-prefix-cls} {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 0 2px 2px 0;
+  background-color: @color-F2;
+  &-primay{
+    border-left: 5px solid @bg-green;
+  }
+
+  &-normal{
+    border-left: 5px solid @bg-blue;
+
+  }
+  &-warm{
+    border-left: 5px solid @bg-orange;    
+  }
+
+  &-danger{
+    border-left: 5px solid @bg-red;
+  }
+}

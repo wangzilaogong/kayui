@@ -1,0 +1,29 @@
+// flex-grow ; flex-shrink ; flex-basis ; 0 1 auto
+@layout-prefix-cls :~"@{css-prefix}-layout";
+.@{layout-prefix-cls} {
+  display: flex;
+  flex-direction: column;
+  flex:auto;
+  background: @layout-body-background;
+  border:1px solid red;
+
+  &&-has-sider{
+    flex-direction: row;
+  }
+
+  &-header{
+
+  }
+
+  &-sider{
+
+  }
+
+  &-content{
+    flex:auto;
+  }
+
+  &-footer{
+
+  }
+}

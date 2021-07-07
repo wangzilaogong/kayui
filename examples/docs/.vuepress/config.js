@@ -43,6 +43,10 @@ module.exports = {
           ['/parts/layout','布局'],
           ['/parts/layoutContainer','布局容器'],
           ['/parts/color','色彩'],
+          ['/parts/icon','图标'],
+          ['/parts/button','按钮'],
+          ['/parts/hr','分割线'],
+          ['/parts/blockquote','引用块'],
         ]
         }
     ]
